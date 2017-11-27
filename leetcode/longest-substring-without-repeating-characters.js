@@ -3,34 +3,34 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function (s) {
-    var s = Array.from(s),
-        charObj = {},
-        longestNum = 1,
-        strArr = [],
+    var longestNum = s ? 1 : 0,
+        s = Array.from(s),
         len = s.length;
 
     //找出所有组合
-    let str = '',
-        lastStr = '',
+    let lastStr = '',
         num = 0;
     for (let i = 0; i < len; i++) {
-        if (longestNum * 2 >= len || longestNum > len - i) {
-            break;
+        if (longestNum >= len - i) {
+            return longestNum;
         }
-        lastStr = s.slice(i, i + longestNum).join('');
-        for (let j = (longestNum > i ? longestNum : i); j < len; j++) {
+        lastStr = s[i];
+        for (let j = i + 1; j < len; j++) {
             num = lastStr.indexOf(s[j]);
-            console.log(lastStr,s[j],num)
             if (num != -1) {
                 break;
             }
 
             lastStr += s[j];
             longestNum = longestNum > lastStr.length ? longestNum : lastStr.length; 
-            // console.log(i,j)
         }
     }
     return longestNum;
 };
 
-console.log(lengthOfLongestSubstring('aasdaaa'))
+console.log(lengthOfLongestSubstring('asdaaa'))
+console.log(lengthOfLongestSubstring('aaa'))
+console.log(lengthOfLongestSubstring('abcde'))
+console.log(lengthOfLongestSubstring(''))
+console.log(lengthOfLongestSubstring('au'))
+console.log(lengthOfLongestSubstring('anviaj'))

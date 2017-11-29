@@ -12,6 +12,8 @@ function ListNode(val) {
 }
 
 /**
+ * 2017-11-27
+ * beats 9.78 % of javascript submissions.
  * @param {ListNode} l1
  * @param {ListNode} l2
  * @return {ListNode}

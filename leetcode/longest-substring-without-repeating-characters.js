@@ -1,4 +1,6 @@
 /**
+ * 2017-11-27
+ * beats 10.37 % of javascript submissions.
  * @param {string} s
  * @return {number}
  */

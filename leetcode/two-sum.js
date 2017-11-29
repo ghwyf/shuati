@@ -1,4 +1,6 @@
 /**
+ * 2017-11-27
+ * beats 34.52 % of javascript submissions.
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
@@ -18,7 +20,6 @@ var twoSum = function(nums, target) {
 	
 	let count = 0;
 	for(let num of nums ){
-		
 		anotherNum = nums.indexOf(target - num);
 		if ( anotherNum >= 0 && anotherNum !== count){
 							return [count,anotherNum] 

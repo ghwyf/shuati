@@ -1,6 +1,6 @@
 /**
  * 2017-11-28
- * beats 28.19 % of javascript submissions.
+ * beats 38.29 % of javascript submissions.
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number}

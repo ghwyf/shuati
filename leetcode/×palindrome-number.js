@@ -29,6 +29,6 @@ var isPalindrome = function(x) {
 };
 console.time('time');
 for(let i = -1111111 ; i <= 1111111 ; i++ ){
-  isPalindrome(i)
+  isPalindrome(i);
 }
 console.timeEnd('time');

@@ -4,14 +4,14 @@
  * @return {number}
  */
 var mySqrt = function(x) {
-  let i = 1;
-  while(i * i <= x){
-    i++;
-  }
-  return i - 1;
+  // let i = 1;
+  // while(i * i <= x){
+  //   i++;
+  // }
+  // return i - 1;
 
   
-  // return parseInt(Math.sqrt(x));
+  return parseInt(Math.sqrt(x));
 };
 
 

@@ -5,8 +5,7 @@
  * @return {string}
  */
 var longestCommonPrefix = function (strs) {
-  let arr = [],
-      shortestLength = strs[0] ? strs[0].length : 0,
+  let shortestLength = strs[0] ? strs[0].length : 0,
       prefix = strs[0] ? strs[0] : '';
   //find the shortest str
   for (let i = 0; i < strs.length; i++) {
